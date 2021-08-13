@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--
+
+
+  Section MENU!
+
+
+-->
+
+  <section data-js-section-menu class="menu">
+    <header>
+      <h1>Mastermind</h1>
+    </header>
+    <div class="menuentrys">
+      <input data-js-opennewgame type="button" class="btn_newgame" value="Neues Spiel">
+      <input data-js-openleaderboard type="button" class="btn_leaderboard" value="Bestenliste">
+    </div>
+  </section>
+  <!--
+
+
+  Section GAME!
+
+
+-->
+  <section data-js-section-game class="game">
+    <div class="btn_back">
+      <input data-js-gameprev type="button" value="Zurück" class="btn_back">
+    </div>
+    <div class="gamemenu">
+      <div class="midline">
+        <div class="currentgame"><span>
+            <h3>Aktuelles Spiel</h3>
+          </span></div>
+        <div class="currenttime"><span data-js-currenttime>Aktuelle Zeit</span></div>
+        <div class="currenttrys"><span data-js-currenttrys>Anzahl der Versuche</span></div>
+        <input class="gamecode-startgame active" data-js-gamecode-startgame value="Spiel Starten" type="button"/>
+        <form>
+        <div class="inputcode">
+          <label for="trycodeinput">Code: </label>
+          <input data-js-gamecode min="1000" max="9999" id="trycodeinput" type="number" minlength="4" maxlength="8" />
+          <input data-js-gamecode-submit value="Enter" type="button"/>
+        </div>
+      </form>
+        <div class="validation">
+          <div class="validation_right">
+            <span data-js-dot-display class="dot_validation"></span>
+            <span data-js-dot-display class="dot_validation"></span>
+            <span data-js-dot-display class="dot_validation"></span>
+            <span data-js-dot-display class="dot_validation"></span>
+          </div>
+        </div>
+
+
+        <div data-js-historyparent class="lt">
+          <div data-js-historyentry class="entry">
+            <span data-js-historycode class="historycode">Code</span>
+            <span data-js-historysignal class="historysignal">Display</span>
+            
+          </div>
+        </div>
+
+
+        <div class="explain">
+          <p>GRÜN: Eine Zahl stimmt überein</p>
+          <p>ORANGE: Eine Zahl stimmt überein, die Position ist aber Falsch</p>
+          <p>ROT: Eine Zahl stimmt nicht ein </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
+
+
+  Section GAMEFINISH!
+
+
+  -->
+  <section data-js-section-gamefinish class="gamefinish">
+    <input data-js-gamefinish-prev type="button" class="back_button" value="Zurück" />
+    <div class="midline">
+      <h1>Aktuelles Spiel</h1>
+      <span data-js-currenttime-name></span>
+      <span class="winner"> Herzlichen Glückwunsch sie haben den Code erraten!</span>
+      <div class="inputusername">
+        <label for="username_input">Username: </label>
+        <input data-js-gamefinish-username  id="username_input" placeholder="Username" type="text" required minlength="4" maxlength="4" />
+      </div>
+      <div class="gamefinish_btns">
+        <input data-js-gamefinish-menu type="button" value="Hauptmenü" />
+        <input data-js-gamefinish-again type="button" value="Erneut Spielen" />
+        <input data-js-gamefinish-leaderboardentry type="button" value="Ins Leaderboard eintragen" />
+      </div>
+    </div>
+  </section>
+  <!--
+
+
+  Section Leaderboard!
+
+
+-->
+  <section data-js-section-leaderboard class="leaderboard">
+    <input data-js-leaderboard-prev type="button" class="back_button" value="Menu" />
+    <div class="leaderboard_main">
+      <h1>Bestenliste</h1>
+      <div class="table">
+        <table class="tb">
+          <thead>
+            <tr>
+              <th class="tb_head">POS</th>
+              <th class="tb_head">Name</th>
+              <th class="tb_head">Versuche</th>
+              <th class="tb_head">Zeit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tb_head">1</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">2</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">3</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">4</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">5</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">6</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">7</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">8</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">9</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+            <tr>
+              <td class="tb_head">10</td>
+              <td data-js-lb-name class="tg-body"></td>
+              <td data-js-lb-try class="tg-body"></td>
+              <td data-js-lb-time class="tg-body"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+  <script src="view.js"></script>
+  <script src="menu.js"></script>
+  <script src="timer.js"></script>
+  <script src="code.js"></script>
+  <script src="game.js"></script>
+  <script src="endgame.js"></script>
+  <script src="leaderboard.js"></script>
+
+
+</body>
+
+</html>

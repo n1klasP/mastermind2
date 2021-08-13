@@ -1,0 +1,328 @@
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.menu button:hover {
+    background-color: #4095c6;
+}
+
+.menu .menuentrys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu input[type=button] {
+    margin-top: 12px;
+    background-color: #4eb5f1;
+    border: none;
+    font-size: 17px;
+    padding: 20px 15px;
+    border-radius: 60px;
+    width: 250px;
+    color: white;
+}
+
+.game .btn_back {
+    float: left;
+}
+
+.game .midline {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game .gamemenu .currentgame {
+    margin-bottom: 25px;
+}
+
+.game .gamemenu .currenttime {
+    margin-bottom: 5px;
+}
+
+.game .gamemenu .currenttrys {
+    margin-bottom: 5px;
+}
+
+.game .gamemenu .inputcode {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.game .gamemenu .validation {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.game .validation .validation_right {
+    margin-right: 10px;
+}
+
+.game .validation .validation_position {
+    margin-right: 10px;
+}
+
+.game .validation .validation_wrong {
+    margin-right: 10px;
+}
+
+.game .validation_right .dot_validation_right {
+    display: none;
+}
+
+.game .validation_right .dot_validation_right.active {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.game .validation_position .dot_validation_position {
+    display: none;
+}
+
+.game .validation_position .dot_validation_position.active {
+    height: 25px;
+    width: 25px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.game .validation_wrong .dot_validation_wrong {
+    display: none;
+}
+
+.game .validation_wrong .dot_validation_wrong.active {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.game .dot_validation {
+    display: none;
+    background-color: red;
+}
+
+.game .dot_validation.green {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.game .dot_validation.orange {
+    height: 25px;
+    width: 25px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.game .dot_validation.red {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.game .explain {
+    border: black;
+    border-width: 1.5px;
+    border-style: solid;
+}
+
+.game .gamemenu .lasttrys {
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 40px;
+}
+
+.game .gamemenu .container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 500px;
+    align-items: flex-start;
+}
+
+.game .entry {
+    margin-bottom: 30px;
+}
+
+.game .historycode{
+    margin-right: 16px;
+}
+.game .historysignal{
+    float: right;
+}
+
+.game .gamecode-startgame {
+    display: none;
+}
+
+.game .code-right-wrapper .lasttrys-row{
+    margin-bottom: 20px;
+}
+
+.game .gamecode-startgame.active {
+    display: block;
+}
+
+.game .container .last-codes-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.game .last-codes-wrapper .last-code-code
+{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.game .container .code-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.game .container .position-wrong-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.game .container .last-try-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.game .container .number-wrong-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.gamefinish .back_button {
+    float: left;
+}
+
+.gamefinish .winner {
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.gamefinish .midline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gamefinish .inputusername {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.gamefinish .inputusername:focus {
+    border-width: 2px;
+    border: blue;
+    border-style: solid;
+}
+
+.gamefinish .inputusername input[type=text] {
+    border-radius: 5px;
+    border-color: lightblue;
+
+}
+
+.gamefinish .inputusername input[type=text]:focus {
+    border-color: lightblue;
+}
+
+.gamefinish .gamefinish_btns input[type=button] {
+    margin-top: 12px;
+    background-color: #4eb5f1;
+    border: none;
+    font-size: 17px;
+    padding: 20px 15px;
+    border-radius: 60px;
+    width: 250px;
+    color: white;
+}
+
+.gamefinish .gamefinish_btns input[type=button]:hover {
+    background-color: #4095c6;
+}
+
+
+.tb {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tb td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tb th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tb .tb_head {
+    border-color: black;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tb .tg-body {
+    border-color: black;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+}
+
+.leaderboard_main {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
